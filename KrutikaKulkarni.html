@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<title>Blogs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  font-size: large;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./w3images/ai-5202869_1280.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.content p{
+    text-indent: 3em;
+    text-align: justify;
+}
+.motivate1{
+ 
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  
+}
+.motivate2{
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small ">
+      <a href="./index.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large " style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+</nav>
+<div class="p-4">
+    <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
+      <h3 class="w3-center">Getting Started With Kaggle</h3>
+      <p class="w3-center w3-large"><strong>By Krutika Kulkarni</strong></p>
+</div>
+
+<div class="container-fluid p-5  content" >
+    <p>
+      <h3>Introduction </h3>
+AICVS continued with its webinar series by hosting a session on the topic ‘Getting Started with Kaggle’ to brief the machine Learnings Newbies about datasets, data pre-processing and various machine learning algorithms including Linear Regression, Logistic Regression and Support Vector Machines. The session was delivered by a Machine Learning and deep Learning enthusiast Krutika Kulkarni, who also interned at Walmart Labs and was the former Head of Projects and Internships at AICVS.  
+
+    </p>
+    <p>
+     <h3>What is Kaggle?</h3>
+The Session kicked off with a brief introduction of Kaggle i.e., an online community of data scientists and machine learning enthusiasts. Kaggle allows users to find and publish data sets, explore and build models in a web-based data-science environment, work with other data scientists and machine learning engineers and enter competitions to solve data science challenges.
+
+    </p>
+    <p>
+      <h3>How to go about Working with Datasets</h3>
+      This was shortly followed by the discussion of steps to be kept in mind while working with datasets. The various steps are listed as follows:
+      <br>1. Understanding and identifying the type of problem.
+      <br>2. Loading the dataset and necessary modules.
+      <br>3. Carrying out EDA to gain insights from the given data (this involves the preprocessing of closely observing the existing data, analyzing it and gaining insights from it).
+      <br>4. Carrying out data pre-Processing.
+      <br>5: Building and evaluating a model. 
+      
+    </p>
+    <p>
+     <h3>Building and Evaluating the Model</h3> 
+      Furthermore, the various topics under building and evaluation a Machine Learning model specifically a Breast Cancer model which was demonstrated by Krutika were discussed which are summarized as followed:<br>
+     <br>1.Linear Regression: A supervised Learning algorithm that performs the task to predict a dependent variable value based on a given independent variable. A cost function is usually used to predict a particular output in this type of model. In the Breast-cancer model the Mean Squared error function is being used. <br>
+      <br> 2.Logistic Regression: A supervised machine Learning algorithm used to determine the particular class to which a datapoint belongs. It is implemented when the target variable is categorical in nature. A sigmoid function is used to obtain the desired output in the Breast-cancer model.<br>
+      <br> 3.Support Vector Machines: A type of supervised ML Algorithm which is mostly used for classification problems but can also be applied to regression models. Each data item plotted as a point in n-dimensional space with the value of each feature being the value of a particular coordinate. Thus, classification can be performed by finding the hyper-plane that differentiates the two classes very well. The hyperplane is chosen such that it maximizes the margin between the given two points. SVMs can be used for both linearly separable as well as non-linearly separable data points. <br>
+      <br>4. Random Forest: A supervised Learning algorithm that can be used for both regression and classification tasks. It is also a type of Ensemble Learning technique. Ensemble Learning is a machine learning Technique that combines many base models to create one robust optimal model which gives accurate results. It is an ensemble of many decision trees. All weak classifiers come together to make a strong classifier. While making predictions all the trees vote for the class they predict and then the class that secures the majority votes is taken as the final prediction.<br>
+     <br> 5. Artificial Neural Networks: A neural network is a series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way human brain operates. Similar to neurons in the human brain, ANNs consist of perceptrons which form the basic units of a neural network. Any ANN consists of 4 components namely:<br>
+      <br>a.) Input Values 
+      <br>b.) Weights and bias 
+      <br>c.) Cost function
+      <br>d.) Activation
+      <br>The Above algorithms and Evaluation methods were discussed with regards to the Breast Cancer Prediction model and the Gap minder dataset both of which were discussed in a detailed and comprehensive manner. 
+      
+    </p>
+    <p>
+     <h3>Submissions in Kaggle</h3>  
+      Lastly, Krutika talked about making submissions in Kaggle competitions by saving the machine learning model in a ‘y_pred’ variable and creating the submission csv file.
+      
+      
+    </p>
+    <p>
+     <h3>Conclusion</h3>
+     <br>
+      The session was wrapped up by an inspiring quote by the speaker which says <strong>“An Oops is a million times better than a what if”</strong> encouraging the beginners to experiment with new domains, make mistakes and take up new challenges.  
+<br>
+<br>
+Cheers,<br>
+Krutika Kulkarni<br>
+</div>
+<h3 class="w3-center" style="font-size: xx-large;size: 30px;"></h3>
+<div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <!--
+        <a href="./w3images/blog2post1.jpg">
+          <img src="./w3images/blog2post1.jpg" alt="post1" style="width:100%">
+        </a>
+       
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+         <!--
+        <a href="./w3images/blog2post2.png">
+            <img src="./w3images/blog2post2.png" alt="post2" style="padding-left:30px; width:100%">
+          </a>
+           -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="./RadhikaSethi.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/aicvs/"></i></a>
+      <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/aicvs" class="text-light"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    
+    </div>
+  </footer>
+   
+  <script>
+  
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  </script>
+  <script src="/js/index.js"></script>
+</body>
+</html>
+
+ 
