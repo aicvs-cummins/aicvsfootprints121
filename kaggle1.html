@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>Blogs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body {font-family: "Raleway", sans-serif}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./w3images/ai-5202869_1280.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.content p{
+    text-indent: 3em;
+    text-align: justify;
+}
+</style>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small ">
+          <a href="./index.html" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+          <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large " style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+  </nav>
+  <div class="p-4">
+      <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
+        <h1> Competition on credit card fraud detection </h1>
+        
+  </div>
+
+  <div class="container-fluid p-5  content" >
+
+    <p>
+        AICVS held another extremely beginner friendly Kaggle competition on 29th November 2020 from 12 noon to 12 midnight. In our quest for learning and doing more and more difficult things , we should always go back to the basics first. It was with this in mind that this dataset was chosen.
+
+        Machine learning is a subset of AI which allows a machine to automatically learn from past data without programming . It is important that credit card companies are able to recognize fraudulent credit card transactions so that customers are not charged for items that they did not purchase.
+        
+        The dataset that we used was " Credit Card Fraud Detection". The dataset contained transactions made by credit cards in September 2013 by European cardholders.
+        
+        This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
+        
+        It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, the original features and more background information about the data was not provided.
+        
+        The winners of the competition were:
+    </p>  
+        <ul>
+        
+        <li>Sakshi Ingale | Score : 0.99961 </li>
+        <li>Nidhi Suryavanshi | Score : 0.99961 </li>
+
+        </ul>
+
+    <p>    
+        The fact that one of the winners was a second year , when the competition was held, proved that even people who don't have a background in ML and have started recently , can participate in competitions and even win.
+    </p>    
+     
+    <p>
+        Since this was our fifth time holding a Kaggle competition, the participants did not face a lot of issues. Thanks to the teams efforts , it was a smooth sailing for everyone. Please go through our website articles for more information on what AICVS does and the various events that we have hosted. Till the next competition, Stay Home , Stay Safe and keep learning and practicing !!!
+        
+    </p>
+
+    
+        Written by Shreya Mandal
+        <br>
+        Written on December 24, 2020
+    
+
+    </p>
+  </div>
