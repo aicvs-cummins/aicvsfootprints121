@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<title>Blogs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  font-size: medium;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./w3images/ai-5202869_1280.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.content p{
+    text-indent: 3em;
+    text-align: justify;
+}
+.motivate1{
+ 
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  
+}
+.motivate2{
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small ">
+      <a href="./index.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large " style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+</nav>
+<div class="p-4">
+    <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
+      <h3 class="w3-center">Skill Assessment and general guidance for the Placements</h3>
+      <p class="w3-center w3-large"><strong>By Jinal Chhajed</strong></p>
+</div>
+
+<div class="container-fluid p-5  content" >
+<p>   
+    AICVS hosted its Webinar Series AICVS 1.0 with its 2nd session on 11th July 2020 on  <strong>"Skill assessment and general guidance for the placements"</strong> by Jinal Chhajed. She is final year IT student at Cummins and got an Internship at Boeing . Also she was the team leader for a start-up project that was selected by i2i (Eaton) under the best 50 projects all over India .She is now developing a project for goverment of india under wireless police department .She is an avid cyber security enthusiast, and also have experience in the field of BI (Business Intelligence).She also has an interest in prolific Data analytics practitioner.
+    <br>
+    <br>
+    The session started with Jinal sharing her failures. She faced two major failures. The First one was She studied directly for the advanced in the hope that if she studied for advanced she could do well in mains. And the second was she limited herself to limited subjects.
+    <br>
+    <br>
+    The major take away she said was to first focus on the initial stage and do not directly jump to the final stage.
+    <br>
+    <br>
+    The next failure she faced was when she got under the influence of start ups. She along with her team made it till the last round but they failed in it the reason was lack of perseverance and lack of support from the people. But she learned the importance of teamwork and leadership skill from it and most importantly she learned to face rejections. She then learned that she should be prepared to face any consequences that life gives her.She taught us that no matter what the only thing continues is the urge to develop your skills.
+</p>
+
+    <p>
+       <h3>Applying IKIGAI in life</h3>
+       <br>
+        <img src="w3images/SkillAssessment.png" class="motivate1">
+        <br> 
+        <p>
+        IKIGAI is a Japanese word which refers to having a direction or purpose in life, that which makes one’s life worthwhile, and towards which an individual takes spontaneous and willing actions giving them satisfaction and a sense of meaning to life.
+        </p>    
+        
+        It contains words like passion, profession, vocation and mission. So the word IKIGAI is the combination of these words.Profession is when you are good at something and are getting paid for it, passion is you do something you love even if unpaid, when you are getting paid for something and the world needs it then it is vocation and when you love something and the world also needs it then you are on a mission. And when you combine all these we get is IKIGAI ,which is a lifetime process all that depends on skills ,if you are good at it and you love it then we know what our IKIGAI is. 
+        
+    </p>
+    <p>
+     <h3>What is Skill and Skill Assessment?</h3>
+        
+        <strong>Skills</strong> are what you get when you put in your efforts, hard work and develop them with continuous practice.
+        <br>
+        <br>
+        <strong>Skill Assessment</strong> is the most widely applied means to review or check on your skills.
+        <br>
+        <br>
+        Check out the presentation to know about the what is skill and skill assessment. The skill assessment test is important because employees are the company’s asset. When companies hire you the usually consider what are you good at ,what are your skills and how do you develop them ,soft skills etc and many students apply for this. So companies take Skill Assessment test to choose between the students which are good at not only technical knowledge but also skills to cope with wide range of people.And it is important because employees are their assets as they know because of them the company will grow world wide.
+        <br>
+        <br>
+        <strong>What does this skill set include ?</strong>
+        Skill is an infinite set and the skills one should evolve depends on the company you’ve applied for. The basic skill-set include soft skills, technical knowledge, loyalty and diversity. The main and most important skills are soft skills and technical knowledge. Don’t be a one trick pony. Dare to take risks
+    </p> 
+       
+    <p>
+        <h3>Soft Skills</h3>
+        In technical terms soft skills are the skills of problem solving, thinking creatively, communicating and acting ethically. Soft skills are teachable now-a-days. Some of the common soft skills are communication ,team-player, leadership skills, positive attitude and perseverance. One of the soft skill sis excellent communicator and presenter.We have service based economy and all we have is human interaction. And to develop this we need to take part in various events ,join NGO’s and clubs like AICVS ,TedxCummins ,codeclub etc. We should reach out to people and talk to seniors and teachers about any doubt or motivation. We can also read books and watch Hollywood movies or series which will help in gaining knowledge some or the other way.
+        <br>
+        <br>
+        <strong> Team player:</strong> we have to be active being an team player and always look at everything with perspective of learning and not earning. Also you should be humble with other team members and clear with the things so that you can guide your team. Also listening, grasping and coordinating are important when you are a team leader.
+        <br>
+        <br>
+        <strong>Leadership:</strong> This quality is most important skill looked up for placements. To develop this skill you should take up new projects. As companies have many projects and they look up for this skill so that you can work with many people and you are adaptable and dynamic and can work with teams. Also be a good listener.
+        <br>
+        <br>
+        Other soft skills are positive attitude and perseverance.
+        <br>
+        <br>
+        <strong>How does this affect placement? </strong><br> The skill test is very important. Usually students find a job, make resume, and submit a google form and then there is skill test form. We usually don’t take this seriously and then we get rejection. We should not take skill assessment test lightly . we should rather take time and study about it and look at the answers at hacckerrank and gfg and prepare unique answers using star method which includes writing down the points like background, advantages and actions and impact of that task. to know more check the presentation.
+        <br>
+        
+        Lastly she stated the Importance of diversity and misconceptions. Diversity in career and workplace is very important and is much preferred by companies. One should be diverse enough to take up opportunities. And also do not narrow your set of diversity in skill set.
+       
+    </p> 
+    <p>
+        <br> 
+      Here's the link to Jinal's Slides: <a href = " SkillAssessment.pptx" >Click here</a>
+      <br>
+      Link to the video :
+      <p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/s7w13Y8Qwks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p>
+      Written by Eshika Dabhade
+      <h6>Written on July 7, 2020</h6>
+    </p>
+
+</div>
+<h3 class="w3-center" style="font-size: xx-large;size: 30px;"></h3>
+<div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <!--
+        <a href="./w3images/blog2post1.jpg">
+          <img src="./w3images/blog2post1.jpg" alt="post1" style="width:100%">
+        </a>
+       
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+         <!--
+        <a href="./w3images/blog2post2.png">
+            <img src="./w3images/blog2post2.png" alt="post2" style="padding-left:30px; width:100%">
+          </a>
+           -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="./RadhikaSethi.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/aicvs/"></i></a>
+      <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/aicvs" class="text-light"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    
+    </div>
+  </footer>
+   
+  <script>
+  
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  </script>
+  <script src="/js/index.js"></script>
+</body>
+</html>
