@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<title>Blogs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body{font-family: "Raleway", sans-serif}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./w3images/ai-5202869_1280.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.content p{
+    text-indent: 3em;
+    text-align: justify;
+}
+</style>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small ">
+          <a href="./index.html" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+          <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large " style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+  </nav>
+  <div class="p-4">
+      <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
+        <h1> AI for Everyone </h1>
+        <p class="w3-center w3-large">  By Ashish Shukla </p>
+  </div>
+
+  <div class="container-fluid p-5  content" >
+
+    <p>
+        AICVS hosted its Webinar Series AICVS 2.0 with its first session on 13th March 2021 on “AI for Everyone”. The speaker for the 1st webinar was Mr. Ashish Salunkhe. Ashish is currently a software engineer at Persistent Systems, Pune . He completed his undergraduate degree in Computer Engineering from PCCOER. Ashish works in ML and full stack web applications. In this session, Ashish articulated his journey in ML and AI and how beginners can get started in this field.
+
+        The session began with an overview of the current scenario in AI and its significance in fighting COVID by early outbreak warning systems, identifying mask violators, detecting misinformation, peer-to-peer AI tracing of COVID-19 etc.
+        
+    </p>
+      
+    <h3>
+        What is Machine Learning and AI?
+   </h3>   
+
+    <p>  
+        Machine Learning is about teaching computers how to learn from data and experiences to make decisions or predictions based on performance metrics and identify patterns without being explicitly programmed. Artificial Intelligence is developing such intelligent systems.
+    </p>    
+
+    <h3></h3>
+        Types of Machine Learning
+        
+    <ul>
+       <li> Unsupervised Learning 
+       <br>
+        Unlabelled data, find patterns based on clustering methods
+       <br>
+        Eg: Recommender Systems
+       </li> 
+
+       <li>
+        Supervised Learning
+       <br> 
+        Labelled data, make predictions
+       <br> 
+        Eg: Text Classification, Spam filtering based on regression, classification
+       </li>
+       
+       <li>
+        Reinforcement Learning
+       <br> 
+        Involves learning optimal actions through trial and error based on rewards and penalty
+       <br>
+        Eg: Self driving cars
+   </ul>
+
+   <h3>
+        Terminologies
+  </h3>    
+        Some common terminologies include : 
+   <br>     
+     <b> Data : </b> Includes textual, audio data etc
+      <br> 
+     <b>Train and Test Data:</b> Model is fed with train data and evaluated with test data
+      <br>  
+     <b> Features: </b> Input parameters to the model
+      <br>  
+     <b>Target: </b> Value to be predicted
+      <br>  
+     <b>Model/ Hypothesis: </b> Representation learnt by applying ML algorithms
+       <br> 
+     <b>Predictions/ Inference: </b> Output of model
+       
+      <h3>
+       How to Start?
+      </h3>  
+        
+       
+        Ashish talked about the 6 steps needed to get started with Machine Learning and AI.
+      <br>
+      
+      <b>
+        Prerequisites
+     </b> <br> 
+        Prerequisites include knowing programming languages Python/R, Statistics, Bayesian Probability, Linear Algebra, Multivariate Calculus. Data Science deals more with statistics and probability while machine learning deals more with linear algebra and multivariate calculus.
+        
+        Building a machine learning model involves the following steps:
+      <br>
+      <b>
+        Data Collection: </b> <br> what types of data to collect, how much data to collect, is it feasible
+       <br>
+      <b>  
+        Data preprocessing: </b> <br> Different algorithms have different assumptions about input data
+       <br>
+      
+      <b>
+        Interpretation of Model Results: </b> <br> Understand if it is underfitting, overfitting, it’s business value etc.
+     <br> 
+      
+      <b>
+        Optimisation and Parameter Tuning: </b> <br> Understand turing parameters, regularisation methods in case of underfitting/overfitting, requirement of feature engineering, ensemble methods
+     <br>
+      
+      <b>
+        Understanding business problems and driving business value: </b> <br>Can it be implemented using fuzzy logic, what parameters are responsible for efficiency, if it can be solved without ML and understand the business value of the model
+     <br>
+      
+        <b>
+        Sponge Mode </b>
+        <br>
+        Give yourself a strong foundation. This includes doing appropriate coursework such as Stanford’s ML course by Andrew Ng, IBM’s Machine Learning with Python, Google’s Machine Learning Crash Course and reference books such as Jerome Freidman. Following this, one can delve further into Deep Learning by doing courses such as the Deep Learning Specialisation on Coursera and Yann LeCun’s course on deep learning, as well as from the Deep Learning book by Ian Goodfellow. DataCamp has hands-on experience for further practice.
+       <br> <b> 
+        Targeted Practice
+        </b> <br>
+        After doing the courses, you need to apply your skills to understand the workflow better. This can be done through implementing proof of concepts, practicing an entire machine learning workflow- from data collection right up to evaluation, practicing on real datasets from Kaggle, UCI, Google Datasets etc and then you may dive deeper into further topics.
+        
+        Some building blocks in a ML application include data preprocessing, sampling and splitting, supervised/unsupervised learning, model evaluation, ensemble learning, bias variance trade-off, hyperparameter tuning and optimizations. Tools such as Pandas(handling of datasets), Scikit-Learn(implementing ML models), Numpy(to handle numerical data), Beautifulsoup(for scraping data through websites) and Matplotlib, Seaborn (visualisation packages) are useful python packages.
+        
+        <br> <b>
+        Projects
+        </b>
+        Projects such as Titanic Challenge, House Price prediction, Hand digit recognition, facial key points can be done. Implement algorithms from scratch to understand how the algorithm works. Implementation of research papers can be found on an archive called PapersWithCode. After this one should be ready to participate in online hackathons, kaggle competitions. Stanford’s CS 229 course is a good resource to get project ideas and implementations.
+        <b> <br>
+        Research
+        </b>
+        While going through research papers make your own incremental changes in the application, this can be done by using other algorithms and the results can be recorded and documented in order to write a research paper. Good research papers are available at various sources online, including arXiv, NeurIPS as well a few noted conferences etc.
+        
+        Ashish mentioned a few projects done by him including a <u> visual assistant for visually impaired,</u> ,<u>detection of fake reviews on online review platforms,</u> <u> and help desk intelligent chatbot.</u> He described the customer support chatbot in detail. Named Desker, it was an automated answering system to assist customers in resolving their problems faster. His techstack included python, tensorflow, mongodb, django, reactJS, Ajax.
+        
+        The chatbot had a prebuilt predictive model connected to a database which contained a list of possible questions and responses, and context information.
+        <br> 
+        <b>
+        Future Prospects
+        </b>
+        Companies look for AI and some subject matter expertise. Many non-cs backgrounds have applications in AI, this can also give one an edge in the job market. There is no need to switch careers, AI can be learnt alongside.
+        <br>
+        Ashish then stressed the importance of profile building and networking required. Having a portfolio with your skills can help you with your job prospects. This can be done by making a portfolio website, creating a resume, participation in hackathons, publishing papers, writing blogs and giving talks, documenting projects on GitHub. Networking can be done through channels like twitter, discord, linkedin, conferences etc.
+        <br>
+        Jobs in DS/ML/AI include data scientist, data analyst, data engineers, Machine Learning Engineering. You can land these jobs by pursuing higher studies, work in startups, networking.
+        <b> <br>
+        Recommended Plan : 
+        </b> <br>
+        If you are an undergraduate student aspiring to get started with ML, you may take the following plan:
+        
+        First year students can start by learning Excel, LateX, Python, R. During the second year a student can pick up an application skill (Android etc). During the third year, one can start participating in hackathons, competitive coding, doing depth specialisations. Final year can be utilised in doing internships, independent projects, freelancing, writing research papers and working on a good BE Final project. If you aim to go for Master’s abroad, you may take the GRE in SEM 6 and TOEFL in SEM 7 and apply for universities by the end of SEM 7.
+        <br>
+        <a href = "https://www.youtube.com/watch?v=Oe_DP4xateI"> Link to the video </a>
+        <br>
+       <i>Written on March 26, 2021</i>
+  </div>

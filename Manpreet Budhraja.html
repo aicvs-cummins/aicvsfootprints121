@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>Blogs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+h1, h2, h3,h4,h5,h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+body {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./w3images/ai-5202869_1280.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.content p{
+    text-indent: 3em;
+    text-align: justify;
+}
+</style>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small ">
+          <a href="./index.html" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+          <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large " style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+  </nav>
+  <div class="p-4">
+      <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
+        <h1> AICVS 2.0 - Learning NLP - the Fun way  </h1>
+        <p class="w3-center w3-large"> by Manpreet Budhraja</p>
+  </div>
+
+  <div class="container-fluid p-5  content" >
+
+    <p>
+       
+      AICVS hosted its Webinar Series AICVS 2.0 with the third session on 27th March 2021 on Learning NLP, conducted by Manpreet Budhraja. Manpreet is a NLP practitioner and currently works as a data engineer. In this session, Manpreet explained the basics of NLP, real world examples and hands-on coding experience.
+    </p>
+
+    <p>
+      Manpreet started with explaining some basic terms commonly used in NLP. A word is a basic atomic unit of meaning. A single word in itself does not hold any meaning but the words around it give it a meaning. Manpreet then introduced the Max Match Algorithm. Corpus ia collection of text. This algorithm matches a word letter by letter with the corpus. When a sequence of letters matches, it is interpreted as a word. For example in speech recognition where there is no explicit word boundary information given within a continuous speech utterance. The minimum edit distance between two strings is defined as the minimum number of editing operations ( like insertion, deletion, substitution) needed to transform one string to another. It is used in automatic spelling correction, in bioinformatics etc
+    </p>
+    
+    <p>
+      Python is the preferred language to train NLP models and NLTK is the most used library to preprocess the data.<b> Tokenization </b> is the act of breaking up a sequence of strings into pieces such as words, symbols and other elements called tokens. The text is tokenized using the sentence_tokenizer function of nltk. It divides the sentence based on the period in the sentence. You may also tokenize using punctuation marks such as commas. Next remove stopwords from the text. These are the commonly used words such as ‘a’ ‘an’ ‘the’. Next, she implemented the minimum edit <u> distance between two random words. </u> A python library is available for this.
+    </p>
+    <p>
+      Parts of Speech are required to understand what type of grammatical structure the words represent. There are two types of words, content words and function words. The content words are generally nouns, adjectives, verbs and adverbs. The function words are generally pronouns, prepositions, coordinating conjunctions, interjections, determiners. Manpreet used the nltk library for finding the pos tags of the words.
+      </p>
+      <p>
+      Regular Expressions are used for generating passwords, validation of email etc. Regular expressions are patterns used to match character combinations in strings. This can be implemented using the re library in python. Manpreet implemented this for finding ‘the’, ‘The’, ‘whitespaces’, etc in a text data.<b> Morphology </b> is the study of the way words are built up from smaller meaning units called MORPHEMES, Two broad classes are:
+      </p>
+      <ol type="1">
+      <li>stems- root word</li>
+      
+      <li>affixes-(s,es,ing) additional meaning</li>
+      </ol>
+
+      <p>
+      <b>Text segmentation </b> is the process of dividing written text into meaningful units, such as words, sentences or topics. This is used in information retrieval, sentiment analysis, and document clustering.
+      </p>
+
+      <p>
+      Stemming and lemmatization are two important preprocessing techniques. There are two types of stemming
+      </p>
+     <ul>
+     <li> <b> Porter stemmer : </b> it doesn’t often generate stems that are actual english words and it is known for its simplicity and speed
+      </li>
+      <li> <b> 
+      lancaster stemmer:  </b> it is an iterative algorithm where each rule specifies either a deletion or replacement of an ending. It is simple but may lead to over-stemming.
+    </li> 
+    </ul> 
+    
+      <p>
+      Manpreet demonstrated how stemming can create noise in the data and thus the need for lemmatization arises.
+      </p>
+      <p>
+      Zipf’s law is a discrete probability distribution that tells you the probability of encountering a word in a given corpus. The input is the rank of the word in terms of its total frequency. Language modeling is predicting the next word based on the previous words. This is widely used in google search, gmail, and messaging. Models that assign probabilities to sequences of words are called Language Models. The assumption that the probability of a word depends only on the previous word is called a <u> Markov Assumption. </u> Unigrams, Bigrams, Trigrams are used to find frequency of words. Manpreet advises to take datasets on kaggle and start working on them. She also suggests some projects for beginners such as text mining, sentiment analysis using BERT, Transformers, LSTMs, RNN, question answer generation, machine translation etc.
+    </p>
+    <p>
+      Link to the video: <a href = "https://www.youtube.com/watch?v=9rIS6fyTbpI"> Link to the video</a>
+    </p>
+  </div>
