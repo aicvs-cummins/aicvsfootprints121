@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+<title>Sessions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./w3images/ai-5202869_1280.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.heading-center{
+    text-align: center;
+    font-size: 30px;
+    font-weight:700;
+}
+
+</style>
+<div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small ">
+      <a href="./index.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="./index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+      <a href="./session.html"  class="w3-bar-item w3-button">SESSIONS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large " style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="./index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="./index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+  <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+</nav>
+<div class="p-4">
+    <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
+      <h3 class="w3-center">SESSIONS</h3>
+</div>
+<br>
+<div class="heading-center">2021-22</div>
+<br>
+<div class="container-fluid">
+    <div class="card-deck">
+       
+        <div class="card bg-light mb-4 col-md-4 col-sm-6">
+      <img class="card-img-top deckimg" src="./w3images/blog3.png" alt="Card image">
+      <div class="card-body text-center">
+        <h4 class="card-title">Getting Started With Kaggle</h4>
+        <p class="card-text">By Krutika Kulkarni</p>
+        <a href="KrutikaKulkarni.html" class="btn btn-dark">Read</a>
+      </div>
+  </div>
+  <div class="card bg-light mb-4 col-md-4 col-sm-6">
+    <img class="card-img-top deckimg" src="./w3images/blog4.png" alt="Card image">
+    <div class="card-body text-center">
+      <h4 class="card-title">Undergrad Research and Applying to PhD Programs</h4>
+      <p class="card-text">By Michelle Thalakottur</p>
+      <a href="MichelleThalakottur.html" class="btn btn-dark">Read</a>
+    </div>
+</div>
+</div>
+</div>
+ <br>
+ <div class="heading-center">2020-21</div>
+  <br>
+  <div class="container-fluid">
+    <div class="card-deck">
+  <div class="card bg-light mb-4 col-md-4 col-sm-6">
+    <img class="card-img-top deckimg" src="./w3images/AICVS 2.0- AI FOR EVERYONE.png" alt="Card image">
+    <div class="card-body text-center">
+      <h4 class="card-title">AI For Everyone</h4>
+      <p class="card-text">By Ashish Salunkhe</p>
+      <a href="AshishSalunkhe.html" class="btn btn-dark">Read</a>
+    </div>
+</div>
+ 
+  <div class="card bg-light mb-4 col-md-4 col-sm-6">
+    <img class="card-img-top deckimg" src="./w3images/AICVS 2.0-PLACE.png" alt="Card image">
+    <div class="card-body text-center">
+      <h4 class="card-title">Off Campus Placements</h4>
+      <p class="card-text">By Affan Sheikh</p>
+      <a href="AffanSheikh.html" class="btn btn-dark">Read</a>
+    </div>
+</div>
+ 
+  <div class="card bg-light mb-4 col-md-4 col-sm-6">
+    <img class="card-img-top deckimg" src="./w3images/AICVS 2.0-NLP.png" alt="Card image">
+    <div class="card-body text-center">
+      <h4 class="card-title">Learning NLP-The Fun Way</h4>
+      <p class="card-text">By Manpreet Budhraja</p>
+      <a href="Manpreet Budhraja.html" class="btn btn-dark">Read</a>
+    </div>
+</div>
+  
+  <div class="card bg-light mb-4 col-md-4 col-sm-6">
+    <img class="card-img-top deckimg" src="./w3images/AICVS 2.0-RUTU.png" alt="Card image">
+    <div class="card-body text-center">
+      <h4 class="card-title">Spark AR!</h4>
+      <p class="card-text">By Rutuja Kolhe</p>
+      <a href="RutujaKolhe.html" class="btn btn-dark">Read</a>
+    </div>
+</div>
+</div>
+</div>
+<br>
+<div class="heading-center">2019-20</div>
+<br>
+<div class="container-fluid">
+    <div class="card-deck">
+<div class="card bg-light mb-4 col-md-4 col-sm-6">
+    <img class="card-img-top deckimg" src="./w3images/AICVS 2.0-RUTU (1).png" alt="Card image">
+    <div class="card-body text-center">
+      <h4 class="card-title">Skills Assessment and it’s importance</h4>
+      <p class="card-text">By Jinal Chhajed</p>
+      <a href="JinalChhajed.html" class="btn btn-dark">Read</a>
+    </div>
+</div>
+ 
+ 
+  <div class="card bg-light mb-4 col-md-4 col-sm-6">
+    <img class="card-img-top deckimg" src="./w3images/AICVS 1.0-INTERNSHIP.png" alt="Card image">
+    <div class="card-body text-center">
+      <h4 class="card-title">Internship approach and Scholarships</h4>
+      <p class="card-text">By Shrusti Jain</p>
+      <a href="ShrustiJain.html" class="btn btn-dark">Read</a>
+    </div>
+</div>
+ 
+  <div class="card bg-light mb-4 col-md-4 col-sm-6">
+    <img class="card-img-top deckimg" src="./w3images/AICVS 1.0-INTERNSHIP (1).png" alt="Card image">
+    <div class="card-body text-center">
+      <h4 class="card-title">Everything About Eaton Pratibha Scholarship</h4>
+      <p class="card-text">By Esha Chiplunkar</p>
+      <a href="EshaChiplunkar.html" class="btn btn-dark">Read</a>
+    </div>
+</div>
+ 
+  <div class="card bg-light mb-4 col-md-4 col-sm-6">
+    <img class="card-img-top deckimg" src="./w3images/AICVS 1.0-oppo.png" alt="Card image">
+    <div class="card-body text-center">
+      <h4 class="card-title">Exploring opportunities for undergraduates</h4>
+      <p class="card-text">By Chaitanyasuma Jain</p>
+      <a href="ChaitanyasumaJain.html" class="btn btn-dark">Read</a>
+    </div>
+</div>
+</div>
+</div>
+  
+
+<!-- 
+  <div class="card bg-light mb-4">
+          <img class="card-img-top deckimg" src="./assets/images/11.jfif" alt="Card image">
+          <div class="card-body text-center">
+            <h4 class="card-title">Indie</h4>
+            <a href="indie.html" class="btn btn-dark">Explore</a>
+          </div>
+      </div>
+      <div class="card bg-light mb-4">
+        <img class="card-img-top deckimg" src="./assets/images/4.jpg" alt="Card image">
+        <div class="card-body text-center">
+          <h4 class="card-title">RnB</h4>
+          <a href="RnB.html" class="btn btn-dark">Explore</a>
+        </div>
+    </div>
+-->
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="./session.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/aicvs/"></i></a>
+      <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/aicvs" class="text-light"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    
+    </div>
+  </footer>
+   
+  <script>
+  
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  </script>
+  <script src="/js/index.js"></script>
+</body>
+</html>
