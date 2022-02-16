@@ -12,7 +12,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Noto+Sans+Display:wght@400;700&display=swap" rel="stylesheet">
 <!--
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 -->
@@ -22,7 +24,7 @@
 
 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Crete Round', serif;}
 
 body, html {
   height: 100%;
@@ -33,13 +35,41 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("./w3images/ai-5202869_1280.jpg");
+  /* background-image: url("./w3images/ai-5202869_1280.jpg"); */
   min-height: 100%;
+}
+
+.bgimg-1 video{
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.95;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+.text1{
+  letter-spacing: 8px;
+  animation: text 3s 1;
+}
+
+
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+}
+
 </style>
 <body>
 
@@ -71,20 +101,15 @@ body, html {
   <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">SESSIONS</a>
 </nav>
 
-<!-- Header with full-height image -->
+<!-- Header with full-height video -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <video src="./videos/bg_video.mp4" muted loop autoplay></video>
   <div class="w3-display-middle w3-text-white d-flex flex-column justify-content-center align-items-center" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small h2 font-weight-bold">AICVS</span><br>
-    <span class="h5">Artificial Intelligence and Computer Vision Society</span>
     
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light" ><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/aicvs" class="text-light"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fa fa-youtube w3-hover-opacity"></i></a>
-  </div>
+    <span class="w3-jumbo w3-hide-small h2 font-weight-bold text1">AICVS</span><br>
+    <span class="h5 text2">Artificial Intelligence and Computer Vision Society</span>
+    
+  
 </header>
 
 <!-- About Section -->
@@ -221,11 +246,9 @@ AI has gone from a science-fiction dream to a critical part of our everyday live
 
 <!--
  Work Section 
-
 <div class="w3-container" style="padding:70px 16px" id="work">
   <h3 class="w3-center">OUR WORK</h3>
   <p class="w3-center w3-large">What we've done for people</p>
-
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
       <img src="./w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
@@ -240,7 +263,6 @@ AI has gone from a science-fiction dream to a critical part of our everyday live
       <img src="./w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
     </div>
   </div>
-
   <div class="w3-row-padding w3-section">
     <div class="w3-col l3 m6">
       <img src="./w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
@@ -256,7 +278,6 @@ AI has gone from a science-fiction dream to a critical part of our everyday live
     </div>
   </div>
 </div>
-
 -->
 
 
@@ -283,6 +304,10 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
+
+
+
 
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
