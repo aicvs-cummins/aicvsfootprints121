@@ -15,16 +15,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Noto+Sans+Display:wght@400;700&display=swap" rel="stylesheet">
-<!--
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
--->
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./assets/flipcard.css">
-
+<link rel="stylesheet" href="./assets/w3.css">
 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: 'Crete Round', serif;}
+  .w3-container .content h1,h2,h3,h4,h5,h6 {font-family: 'Crete Round', serif; }
+ 
+  .mainNav {font-family: 'Raleway', serif; font-size: medium;}
 
 body, html {
   height: 100%;
@@ -54,7 +54,7 @@ body, html {
 }
 
 .text1{
-  letter-spacing: 8px;
+  letter-spacing: 10px;
   animation: text 3s 1;
 }
 
@@ -71,10 +71,11 @@ body, html {
 }
 
 </style>
+
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="w3-top mainNav">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
     <!-- Right-sided navbar links -->
@@ -93,10 +94,10 @@ body, html {
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
-  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="./index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="./index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
   <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
   <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">SESSIONS</a>
 </nav>
@@ -109,40 +110,37 @@ body, html {
     <span class="w3-jumbo w3-hide-small h2 font-weight-bold text1">AICVS</span><br>
     <span class="h5 text2">Artificial Intelligence and Computer Vision Society</span>
     
-  
 </header>
 
 <!-- About Section -->
 
-<div class="w3-container " style="padding-top: 70px"  id="about">
+<div class="w3-container content" style="padding-top: 70px"  id="about">
   <h3 class="w3-center ">ABOUT US</h3>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-half" style="padding:8px 20px">
       <i class="fa fa-desktop fa-3x "></i>
       <p class="w3-large font-weight-bold">What is AICVS?</p>
-      <p>AICVS is the Artificial Intelligence and Computer Vision Society of Cummins College of Engineering. We at AICVS adopt an enthusiastic and dedicated approach to learn and put in the effort, as we start from the very basics, and develop our skills as we move forward. We at AICVS conduct various practical workshops, guest lectures, seminars, Kaggle competitions, that all the students can participate in.</p>
+      <p style="font-size: 17px;">AICVS is the Artificial Intelligence and Computer Vision Society of Cummins College of Engineering. We at AICVS adopt an enthusiastic and dedicated approach to learn and put in the effort, as we start from the very basics, and develop our skills as we move forward. We at AICVS conduct various practical workshops, guest lectures, seminars, Kaggle competitions, that all the students can participate in.</p>
     </div>
     <div class="w3-half" style="padding:8px 20px">
       <i class="fa fa-bullseye fa-3x " aria-hidden="true"></i>
       <p class="w3-large font-weight-bold">Mission</p>
-      <p>To introduce students to the thriving domain of AI and Computer Vision. We aim to equip them with primary skillset in Deep Learning and  various algorithms. We aim to guide to learn to implement these techniques and better understand what happens behind the scenes.</p>
+      <p style="font-size: 17px;">To introduce students to the thriving domain of AI and Computer Vision. We aim to equip them with primary skillset in Deep Learning and  various algorithms. We aim to guide to learn to implement these techniques and better understand what happens behind the scenes.</p>
     </div>
   </div>
 </div>
 
 <!-- Intro Section -->
-<div class="w3-container " style="padding:70px 140px"  id="about">
-  <h3 class="w3-center ">How AI ML has changed the world</h3>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
+<div class="w3-container content " style="padding:45px 40px"  id="about">
+  <h3 class="w3-center padding-bottom: 10px">How AI ML has changed the world</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:32px; font-size: 17px;">
     From the research we do on the Internet to the goods that come to our door with a single click, to recommendations on Netflix,  AI technology is directly in our lives. AI is applied in all sectors including healthcare, banking, logistics and travel industry to provide superior experience. The latest developments in Artificial Intelligence are chatbots, smart cars and IoT devices. 
 AI has gone from a science-fiction dream to a critical part of our everyday lives.
     
   </div>
 </div>
 
-
-
-<div class="w3-container countainer-fluid" style="padding:70px 16px" id="team">
+<div class="w3-container countainer-fluid content" style="padding:70px 16px" id="team">
   <h3 class="w3-center">AICVS Student Committee 2021-22</h3>
   <p class="w3-center w3-large">The ones who runs this Club</p>
   <div style="margin-top:64px">
@@ -237,10 +235,6 @@ AI has gone from a science-fiction dream to a critical part of our everyday live
    
   </div>
 </div>
-
-
-
-
 
 
 

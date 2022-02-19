@@ -10,28 +10,58 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+<link rel="stylesheet" href="./assets/w3.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
-  font-size: medium;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("./w3images/ai-5202869_1280.jpg");
-  min-height: 100%;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-
+  
+  body h1,h2,h3,h4,h5,h6 {font-family: 'Crete Round', serif; }
+  .content{font-size: medium;}
+  
+  .w3-bar {font-family: 'Crete Round', serif; font-size: medium;}
+  
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+  
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    /* background-image: url("./w3images/ai-5202869_1280.jpg"); */
+    min-height: 100%;
+  }
+  
+  .bgimg-1 video{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+  }
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  
+  .text1{
+    letter-spacing: 8px;
+    animation: text 3s 1;
+  }
+  
+  
+  @keyframes text {
+    0%{
+      color: black;
+      margin-bottom: -40px;
+    }
+    30%{
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+    }
+  }
+  
 .content p{
     text-indent: 3em;
     text-align: justify;
@@ -60,15 +90,15 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="w3-top ">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small ">
-      <a href="./index.html" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="./index.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="./index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
-      <a href="./session.html" class="w3-bar-item w3-button">SESSIONS</a>
+      <a href="./session.html"  class="w3-bar-item w3-button">SESSIONS</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -79,13 +109,14 @@ body, html {
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large " style="display:none" id="mySidebar">
+<nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
-  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="./index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="./index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
   <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
   <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">SESSIONS</a>
 </nav>
+
 <div class="p-4">
     <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
       <h3 class="w3-center">Internship Approach and Scholarships</h3>
