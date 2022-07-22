@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<title>Blogs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  
+  body h1,h2,h3,h4,h5,h6 {font-family: 'Crete Round', serif; }
+  .content{font-size: medium;}
+  
+  .w3-bar {font-family: 'Crete Round', serif; font-size: medium;}
+  
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+  
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    /* background-image: url("./w3images/ai-5202869_1280.jpg"); */
+    min-height: 100%;
+  }
+  
+  .bgimg-1 video{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+  }
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  
+  .text1{
+    letter-spacing: 8px;
+    animation: text 3s 1;
+  }
+  
+  
+  @keyframes text {
+    0%{
+      color: black;
+      margin-bottom: -40px;
+    }
+    30%{
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+    }
+  }
+  
+  </style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top ">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small ">
+      <a href="./index.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="./index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+      <a href="./session.html"  class="w3-bar-item w3-button">SESSIONS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="./index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="./index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+  <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">SESSIONS</a>
+</nav>
+
+  <div class="p-4">
+      <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
+        <h1> CV Learning Deck </h1>
+        
+  </div>
+
+  <div class="container-fluid p-5  content" >
+
+    <p>
+        AICVS held learning series from 24th January 2022 to 13th February 2022. A self paced learning series - "Computer Vision Learning Deck''.  It comprises a series of introductory courses (beginner level) by Kaggle that will aid you all in kickstarting your journey in Machine Learning and Computer Vision. These courses are free of cost and also provide certificates by Kaggle on completion. They pare down complex topics to their key practical components, so you can gain usable skills just in a few hours. 
+        <br><br>
+        Completion of each course prepares you for the next one and builds on what you learnt in the previous one. We will allocate 1 week for each course. Each course takes upto 3-4 hrs and so you can easily complete it at your own pace in the allocated time. At the end of the week a quiz will be conducted to test the understanding of the participants. This series will be followed by the conduction of Kaggle competition so that you all can apply what you have learnt
+        
+        <h3>Timeline</h3>
+    </p>  
+        <ul>
+        
+        <li>Week 1 - Intro to Machine Learning </li>
+        <li>Week 2 - Intro to Deep Learning</li>
+        <li>Week 3 - Computer Vision</li>
+        <li>Week 4 - Kaggle Competition</li>
+
+        </ul>
+
+    <p>    
+        The fact that many don't have a background from ML and Computer Science , when the learning series was held, proved that even people who don't have a background in ML and have started recently.
+    </p>    
+     
+    <p>
+        The participants did not face a lot of issues. Thanks to the teams efforts , it was a smooth sailing for everyone. Please go through our website articles for more information on what AICVS does and the various events that we have hosted. Till the next learning, Stay Safe and keep learning and practicing !!!
+        
+    </p>
+
+    
+        Written by Deeksha Jagtap
+        <br>
+        Written on March 14, 2022
+    
+
+    </p>
+  </div>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<title>Sessions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+  
+  body h1,h2,h3,h4,h5,h6 {font-family: 'Crete Round', serif; }
+  .content{font-size: medium;}
+  
+  .w3-bar {font-family: 'Crete Round', serif; font-size: medium;}
+  
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+  
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    /* background-image: url("./w3images/ai-5202869_1280.jpg"); */
+    min-height: 100%;
+  }
+  
+  .bgimg-1 video{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+  }
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  
+  .text1{
+    letter-spacing: 8px;
+    animation: text 3s 1;
+  }
+  
+  
+  @keyframes text {
+    0%{
+      color: black;
+      margin-bottom: -40px;
+    }
+    30%{
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+    }
+  }
+  
+  </style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top ">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small ">
+      <a href="./index.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="./index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+      <a href="./session.html"  class="w3-bar-item w3-button">SESSIONS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="./index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="./index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+  <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">SESSIONS</a>
+</nav>
+
+  <div class="p-4">
+      <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
+        <h1> Bringing Realism in Mobile Augmented Reality</h1>
+        <p class="w3-center w3-large">  By Sanjana Date  </p>
+  </div>
+
+  <div class="container-fluid p-5  content" >
+
+    <p>
+        As A part of AICVS Webinar 3.0, AICVS invited Sanjana Date, A Btech student at Cummins College Of Engineering for Women to share her knowledge and guide the audience through the domain of ‘Bringing Realism in Mobile Augmented Reality’.
+
+        
+    </p>
+      
+    <h3>
+        Augmented reality Vs Virtual reality 
+   </h3>   
+
+    <p>  
+        To kick off the session, Sanjana gave a brief introduction about Augmented reality explaining the difference between the Augmented reality (AR augments your surroundings by adding digital elements to a live view, often by using the camera on a smartphone), Virtual reality (VR is a completely immersive experience that replaces a real-life environment with a simulated one) and mixed reality(Combines real and virtual reality).  
+
+    </p>   
+    <p>
+        Further She talked about several AR Concepts including occlusion (the ability to cover virtual AR objects with objects physically located in the room) and Pose in 3D. She also talked about various technological advancements such as Learning Optimized Local Difference Binaries, Space Sharing Using Markerless AR and AR Core by google. 
+
+    </p>
+    <p>
+        Next Sanjana Talked about Interaction in MAR Precision Target Selection using the following techniques: 
+
+    </p>
+    <h3>  
+    Techniques
+    </h3>
+      
+        
+    <ul>
+       <li> PR-Cone-Casting 
+       </li> 
+
+       <li>
+        Offset-Ray-Casting 
+       </li>
+       
+       <li>
+        2D-Grid-Cursor 
+    </li>
+    <li>
+        PR-Bubble-cursor
+    </li>
+   </ul>
+
+   <h3>
+ Designing for MAR 
+  </h3>    
+         
+  <ul>
+    <li> 2D interactions 
+    </li> 
+
+    <li>
+        Environment Consideration 
+    </li>
+    
+    <li>
+        Mental models 
+
+ </li>
+ <li>
+    Visual affordance 
+ </li>
+</ul>
+<h3>
+Mar Application Examples
+     </h3>    
+            
+     <ul>
+       <li> Ikea Place   
+       </li> 
+   
+       <li>
+        Flipkart Camera
+       </li>
+   </ul>
+   <h3>
+    AR Platforms
+     </h3>    
+            
+     <ul>
+       <li> Unity 
+       </li> 
+   
+       <li>
+        Unreal 
+       </li>
+       
+       <li>
+        AR Core
+    </li>
+    <li>
+        ARKit
+    </li>
+    <li>
+        Snap AR
+    </li>
+   </ul>
+
+            <p>
+                Sanjana also gave an interactive demo demonstrating Mobile Augmented reality making the session even more exciting and insightful.
+            </p>
+            <p>
+                In conclusion, Sanjana discussed about the growing market, The enhanced user Experience, the applications and the ongoing research around augmented reality leaving the audience excited to dive deeper into the world of the same!
+
+            </p>
+     
+        </b> <br>
+        <br>
+        <a href = "https://www.youtube.com/watch?v=Ww7eT3oww9o"> Link to the video </a>
+        <br>
+       <i>Written on July 13, 2022</i>
+  </div>

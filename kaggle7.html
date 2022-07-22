@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<title>Blogs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  
+  body h1,h2,h3,h4,h5,h6 {font-family: 'Crete Round', serif; }
+  .content{font-size: medium;}
+  
+  .w3-bar {font-family: 'Crete Round', serif; font-size: medium;}
+  
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+  
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    /* background-image: url("./w3images/ai-5202869_1280.jpg"); */
+    min-height: 100%;
+  }
+  
+  .bgimg-1 video{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+  }
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  
+  .text1{
+    letter-spacing: 8px;
+    animation: text 3s 1;
+  }
+  
+  
+  @keyframes text {
+    0%{
+      color: black;
+      margin-bottom: -40px;
+    }
+    30%{
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+    }
+  }
+  
+  </style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top ">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="./index.html" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small ">
+      <a href="./index.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="./index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+      <a href="./session.html"  class="w3-bar-item w3-button">SESSIONS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-container w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="./index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="./index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+  <a href="./session.html" onclick="w3_close()" class="w3-bar-item w3-button">SESSIONS</a>
+</nav>
+
+  <div class="p-4">
+      <div class=" mt-5 p-3 my-3 " style="text-align:center; background-color:rgb(255, 255, 255);">
+        <h1> Flower Image Classification </h1>
+        
+  </div>
+
+  <div class="container-fluid p-5  content" >
+
+    <p>
+        AICVS held another Kaggle competition from 13th February 2022 to 20th February 2022. In our quest for learning and doing more and more difficult things , we should always go back to the basics first. It was with this in mind that this dataset was chosen.
+
+        Machine learning is a subset of AI which allows a machine to automatically learn from past data without programming . It’s difficult to fathom just how vast and diverse our natural world is. There are over 5,000 species of mammals, 10,000 species of birds, 30,000 species of fish – and astonishingly, over 400,000 different types of flowers.
+
+        In this competition, you’re challenged to build a machine learning model to classify 5 types of flowers - ['sunflower', 'tulip', 'daisy', 'rose', 'dandelion'] on the basis of their given images.
+        <br>
+       
+        
+        The winners of the competition were:
+    </p>  
+        <ul>
+        
+        <li> Annada Dash</li>
+
+        </ul>
+
+        <p>
+            We would like to thank the participants for showing so much vigor and enthusiasm for the Kaggle competitions hosted by us. We hope to bring you many more competitions like this.
+            </p>
+
+    
+        Written by Deeksha Jagtap
+        <br>
+        Written on May 14, 2022
+    
+
+    </p>
+  </div>
